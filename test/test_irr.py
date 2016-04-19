@@ -3,7 +3,7 @@ import irr
 
 class _Base(unittest.TestCase):
     def test(self):
-        for test in xrange(1000):
+        for test in range(1000):
             d, r = self.case()
             self.assertAlmostEqual(irr.irr(d), r)
 
@@ -27,7 +27,7 @@ class SlightlyLongerBondTest(_Base):
 class MoreNonzeroTest(_Base):
     def case(self, n=10):
         r = math.exp(random.gauss(0, 1)) - 1
-        d = [random.random() for i in xrange(n-1)]
+        d = [random.random() for i in range(n-1)]
         d.append(-sum([x * (1+r)**(n-i-1) for i, x in enumerate(d)]))
         return d, r
 
@@ -40,7 +40,7 @@ class PerformanceTest(unittest.TestCase):
         for n in ns:
             k = 100
             sums = [0.0, 0.0]
-            for j in xrange(k):
+            for j in range(k):
                 r = math.exp(random.gauss(0, 1.0 / n)) - 1
                 x = random.gauss(0, 1)
                 d = [x] + [0.0] * (n-2) + [-x * (1+r)**(n-1)]

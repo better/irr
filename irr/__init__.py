@@ -6,7 +6,7 @@ BASE_TOL = 1e-12
 def irr_binary_search(stream, tol=BASE_TOL):
     rate_lo, rate_hi = -MAX_LOG_RATE, +MAX_LOG_RATE
     sgn = numpy.sign(stream[0]) # f(x) is decreasing
-    for steps in xrange(100):
+    for steps in range(100):
         rate = (rate_lo + rate_hi)/2
         r = numpy.arange(len(stream))
         # Factor exp(m) out because it doesn't affect the sign
@@ -25,7 +25,7 @@ def irr_binary_search(stream, tol=BASE_TOL):
 
 def irr_newton(stream, tol=BASE_TOL):
     rate = 0.0
-    for steps in xrange(50):
+    for steps in rangex(50):
         r = numpy.arange(len(stream))
         # Factor exp(m) out of the numerator & denominator for numerical stability
         m = max(-rate * r)
