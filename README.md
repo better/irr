@@ -1,3 +1,5 @@
+[![Travis status](https://img.shields.io/travis/better/irr/master.svg?style=flat)](https://travis-ci.org/better/irr)
+
 This repo contains a custom implementation of `numpy.irr` built from scratch. It is used to compute the [internal rate of return](https://en.wikipedia.org/wiki/Internal_rate_of_return), also called APR, which is useful in a wide range of financial circumstances.
 
 What's wrong with `numpy.irr`? It's extremely slow and usually returns `nan`.
