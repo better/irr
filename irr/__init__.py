@@ -25,7 +25,7 @@ def irr_binary_search(stream, tol=BASE_TOL):
 
 def irr_newton(stream, tol=BASE_TOL):
     rate = 0.0
-    for steps in rangex(50):
+    for steps in range(50):
         r = numpy.arange(len(stream))
         # Factor exp(m) out of the numerator & denominator for numerical stability
         m = max(-rate * r)
