@@ -6,4 +6,12 @@ What's wrong with `numpy.irr`? It's extremely slow and usually returns `nan`.
 
 There are two implementations available in this package. `irr.irr` defaults to `irr.irr_binary_search` which is slower but more stable. There is also `irr.irr_newton` which is much faster but sometimes doesn't converge.
 
-Have fun!
+Binary Search
+-------------
+
+![binary search](https://raw.githubusercontent.com/better/irr/master/binary_search.gif)
+
+Newton's method
+-------------
+
+![newton](https://raw.githubusercontent.com/better/irr/master/newton.gif)
