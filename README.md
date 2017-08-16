@@ -15,3 +15,8 @@ Newton's method
 -------------
 
 ![newton](https://raw.githubusercontent.com/better/irr/master/newton.gif)
+
+Misc
+----
+
+This repo uses the [MIT License](https://github.com/better/irr/blob/master/LICENSE)
