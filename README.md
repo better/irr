@@ -4,6 +4,18 @@ This repo contains a custom implementation of `numpy.irr` built from scratch. It
 
 What's wrong with `numpy.irr`? It's extremely slow and usually returns `nan`.
 
+Installing
+==========
+
+The easiest way to install is probably to run this:
+
+```
+pip install -e git://github.com/better/irr#egg=irr
+```
+
+More info
+=========
+
 There are two implementations available in this package. `irr.irr` defaults to `irr.irr_binary_search` which is slower but more stable. There is also `irr.irr_newton` which is much faster but sometimes doesn't converge.
 
 Binary Search
@@ -17,6 +29,6 @@ Newton's method
 ![newton](https://raw.githubusercontent.com/better/irr/master/newton.gif)
 
 Misc
-----
+====
 
 This repo uses the [MIT License](https://github.com/better/irr/blob/master/LICENSE)
